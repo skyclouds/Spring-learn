@@ -21,8 +21,9 @@
         <module>hello</module>
         <module>di</module>
         <module>autowired</module>
-      <module>annotation</module>
-  </modules>
+        <module>annotation</module>
+        <module>appconfig</module>
+    </modules>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
