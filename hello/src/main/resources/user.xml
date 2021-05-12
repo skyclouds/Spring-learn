@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用Spring来创建对象,在Spring中这些都称为Bean
+        类型 变量名 = new 类型();
+        Hello hello= new Hello();
+        
+        id : bean的唯一标识符
+        class : bean对象所应对全限定名(包名+类名)
+        name :也是别名,而且可以同时取多个别名,分隔符多样
+    -->
+    <bean id="user" class="com.example.pojo.User" name="alias1 alias2,alias3;alias4">  
+        <!-- 
+            property 相当于给对象中的属性设置一个值
+        -->
+        <property name="name" value="Spring"></property>
+    </bean>
+    <!-- 别名,如果添加了别名,也可以使用别名获得这个对象-->
+    <alias name="user" alias="alias" />
+
+</beans>

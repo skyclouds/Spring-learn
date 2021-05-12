@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="hello" class="com.example.pojo.Hello">
+        <!-- <property name="name" value="Spring"></property> -->
+        <!--有参构造1:通过下标赋值-->
+        <!-- <constructor-arg index="0" value="Srping"/> -->
+        <!--有参构造2:通过类型创建,不建议使用,如果有多个相同类构造参数有问题-->
+        <!-- <constructor-arg type="java.lang.String" value="Spring"/> -->
+        <!--有参构造3:直接通过参数名-->
+        <constructor-arg name="name" value="Spring" />
+    </bean>
+</beans>
