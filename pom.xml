@@ -8,17 +8,28 @@
 
     <packaging>pom</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <encoding>UTF-8</encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <modules>
         <module>ioc</module>
         <module>hello</module>
         <module>di</module>
-    </modules>
+        <module>autowired</module>
+      <module>annotation</module>
+  </modules>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.3.6</version>
+            <version>5.2.0.RELEASE</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/junit/junit -->
