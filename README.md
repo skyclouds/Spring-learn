@@ -3,4 +3,4 @@
 
 [视频地址](https://www.bilibili.com/video/BV1WE411d7Dv?p=1)
 
-[笔记资料](www.kuangstudy.com)
+[笔记资料](https://www.kuangstudy.com)
