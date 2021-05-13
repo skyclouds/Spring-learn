@@ -6,21 +6,26 @@ public class UserServiceProxy implements UserService{
     public void setUserService(UserServiceMySQLImpl userService) {
         this.userService = userService;
     }
+
+    @Override
     public void insert() {
         log("insert");
         userService.insert();
     }
 
+    @Override
     public void delete() {
         log("delete");
         userService.delete();
     }
 
+    @Override
     public void update() {
         log("update");
         userService.update();
     }
 
+    @Override
     public void query() {
         log("query");
         userService.query();
