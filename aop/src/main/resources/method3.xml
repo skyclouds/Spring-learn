@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 注册bean -->
+    <bean id="userService" class="com.example.service.UserServiceImpl"></bean>
+    <bean id="annotationPointCut" class="com.example.diy.AnnotationPointCut"></bean>
+
+    <!-- 开启注解支持 proxy-target-class:APO方式,false:JDK(默认),true:cglib-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>
