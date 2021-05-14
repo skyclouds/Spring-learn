@@ -25,8 +25,9 @@
         <module>appconfig</module>
         <module>proxy</module>
         <module>aop</module>
-    <module>mybatis</module>
-  </modules>
+        <module>mybatis</module>
+        <module>transaction</module>
+    </modules>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
